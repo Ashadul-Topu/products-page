@@ -12,11 +12,12 @@ const getSingleData = async () => {
         <img src=${res.data.thumbnail} alt="">
         </div>
         <div class="next-img">
-        <script>
+            ${
              res.data.images.map(img => {
-                console.log(img);
+                console.log(img)
+                // <img src={img} alt=""/>
             })
-        </script>
+        }
         </div>
         </div>
         <div class="product-detail">
